@@ -1,0 +1,398 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../Book1.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../Book1.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#467886" vlink="#96607D">
+
+<table border=0 cellpadding=0 cellspacing=0 width=1527 style='border-collapse:
+ collapse;table-layout:fixed;width:1145pt'>
+ <col width=209 style='mso-width-source:userset;mso-width-alt:6698;width:157pt'>
+ <col width=451 style='mso-width-source:userset;mso-width-alt:14421;width:338pt'>
+ <col width=87 style='width:65pt'>
+ <col width=219 style='mso-width-source:userset;mso-width-alt:6997;width:164pt'>
+ <col width=561 style='mso-width-source:userset;mso-width-alt:17962;width:421pt'>
+ <tr height=44 style='mso-height-source:userset;height:33.0pt'>
+  <td height=44 width=209 style='height:33.0pt;width:157pt'></td>
+  <td class=xl66 width=451 style='width:338pt'>VIM cheatsheet</td>
+  <td width=87 style='width:65pt'></td>
+  <td width=219 style='width:164pt'></td>
+  <td width=561 style='width:421pt'></td>
+ </tr>
+ <tr height=47 style='mso-height-source:userset;height:35.0pt'>
+  <td height=47 class=xl68 style='height:35.0pt'>:q</td>
+  <td class=xl68>close file</td>
+  <td></td>
+  <td class=xl65 colspan=2 style='mso-ignore:colspan'>Combine operators with
+  motions to use them</td>
+ </tr>
+ <tr height=48 style='mso-height-source:userset;height:36.0pt'>
+  <td height=48 class=xl68 style='height:36.0pt'>:qa</td>
+  <td class=xl69>close all files</td>
+  <td></td>
+  <td class=xl67>2dd</td>
+  <td class=xl67>delete 2 lines</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>:x/:wq</td>
+  <td class=xl68>save and close file</td>
+  <td></td>
+  <td class=xl67>cw</td>
+  <td class=xl67>change one word</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl65 style='height:32.0pt'></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl67>c3w</td>
+  <td class=xl67>change three words</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl65 style='height:32.0pt'>Navigating</td>
+  <td class=xl65></td>
+  <td></td>
+  <td class=xl67>c4l</td>
+  <td class=xl67>change four letters</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>h j k l</td>
+  <td class=xl67>arrow keys</td>
+  <td></td>
+  <td class=xl67>4x</td>
+  <td class=xl67>change<span style='mso-spacerun:yes'>  </span>4 characters
+  after the cursor</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>ctrl + u</td>
+  <td class=xl67>half page up</td>
+  <td></td>
+  <td class=xl67>4p</td>
+  <td class=xl67>paste 5 times after the cursor</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>ctrl + d</td>
+  <td class=xl67>half page down</td>
+  <td></td>
+  <td class=xl67>25,50</td>
+  <td class=xl67>lines 25-50</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>ctrl + B</td>
+  <td class=xl67>page up</td>
+  <td></td>
+  <td class=xl67>:g/^\s*$/d</td>
+  <td class=xl67>全局删除空白行</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>ctrl + F</td>
+  <td class=xl67>page down</td>
+  <td></td>
+  <td class=xl67>:2,7s/^/#/</td>
+  <td class=xl67>把2-7行前面加上#注释</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 style='height:32.0pt'></td>
+  <td class=xl65></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl65 style='height:32.0pt'>words</td>
+  <td class=xl65></td>
+  <td></td>
+  <td class=xl67>:g/{pattern}/d</td>
+  <td class=xl67>delete all lines containing pattern</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>b / w</td>
+  <td class=xl67>previous/next word</td>
+  <td></td>
+  <td class=xl67>:g!/{pattern}/d</td>
+  <td class=xl67>delete all lines not containing pattern</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>ge / e</td>
+  <td class=xl67>previous/next end of word</td>
+  <td></td>
+  <td class=xl67>d$ or D</td>
+  <td class=xl67>delete to the end of the line</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 style='height:32.0pt'></td>
+  <td class=xl65></td>
+  <td></td>
+  <td class=xl67>x</td>
+  <td class=xl67>delete character</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl65 style='height:32.0pt'>Line</td>
+  <td class=xl65></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>0 (数字)</td>
+  <td class=xl67>start of line</td>
+  <td></td>
+  <td class=xl65 colspan=2 style='mso-ignore:colspan'>exiting insert mode</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>^</td>
+  <td class=xl67>start of line (after whitespace)</td>
+  <td></td>
+  <td class=xl67>Esc</td>
+  <td class=xl67>exit insert mode</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>$<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl67>end of line</td>
+  <td></td>
+  <td class=xl67>ctrl+ C</td>
+  <td class=xl67>eixt insert mode and abort current command</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 style='height:32.0pt'></td>
+  <td class=xl65></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl65 style='height:32.0pt'>character</td>
+  <td class=xl65></td>
+  <td></td>
+  <td class=xl65>clipboard</td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>fc</td>
+  <td class=xl67>go forward to character c</td>
+  <td></td>
+  <td class=xl67>x</td>
+  <td class=xl67>delete character</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'><span
+  style='mso-spacerun:yes'> </span>Fc</td>
+  <td class=xl67>go backward to character c</td>
+  <td></td>
+  <td class=xl67>clipboard</td>
+  <td class=xl67>delete line (cut)</td>
+ </tr>
+ <tr height=43 style='page-break-before:always;height:32.0pt'>
+  <td height=43 style='height:32.0pt'></td>
+  <td class=xl65></td>
+  <td></td>
+  <td class=xl67>yy</td>
+  <td class=xl67>yank line (copy)</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl65 style='height:32.0pt'>Document</td>
+  <td class=xl65></td>
+  <td></td>
+  <td class=xl67>p</td>
+  <td class=xl67>paste</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>gg</td>
+  <td class=xl67>First line</td>
+  <td></td>
+  <td class=xl67>P</td>
+  <td class=xl67>paste before</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'><span
+  style='mso-spacerun:yes'> </span>G</td>
+  <td class=xl67>last line</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'><span
+  style='mso-spacerun:yes'> </span>:{number}</td>
+  <td class=xl67>go to line {number}</td>
+  <td></td>
+  <td class=xl65>Find &amp; Replace</td>
+  <td></td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>{number}G</td>
+  <td class=xl67>go to line {number}</td>
+  <td></td>
+  <td class=xl67>:%s/foo/bar/g</td>
+  <td class=xl67>replace foo with bar in whole document</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>{number} j</td>
+  <td class=xl67>go down {number} lines</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>{number} k</td>
+  <td class=xl67>go up {number} lines</td>
+  <td></td>
+  <td class=xl65>operaters list</td>
+  <td></td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl65 style='height:32.0pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl65></td>
+  <td></td>
+  <td class=xl67>d</td>
+  <td class=xl67>delete</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl65 style='height:32.0pt'>Editing</td>
+  <td class=xl65></td>
+  <td></td>
+  <td class=xl67>y</td>
+  <td class=xl67>yank</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>a</td>
+  <td class=xl67>append</td>
+  <td></td>
+  <td class=xl67>c</td>
+  <td class=xl67>change(delete then insert)</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'><span
+  style='mso-spacerun:yes'> </span>A</td>
+  <td class=xl67>append from end of line</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>i</td>
+  <td class=xl67>insert</td>
+  <td></td>
+  <td class=xl67>&gt;</td>
+  <td class=xl67>indent right</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>o</td>
+  <td class=xl67>next line</td>
+  <td></td>
+  <td class=xl67>&lt;<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl67>indent left</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'><span
+  style='mso-spacerun:yes'> </span>O</td>
+  <td class=xl67>previous line</td>
+  <td></td>
+  <td class=xl67>=</td>
+  <td class=xl67>autoindent</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 style='height:32.0pt'></td>
+  <td class=xl65></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>s</td>
+  <td class=xl67>delete char and insert</td>
+  <td></td>
+  <td class=xl67>g~</td>
+  <td class=xl67>swap case</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'><span
+  style='mso-spacerun:yes'> </span>S</td>
+  <td class=xl67>delete line and insert</td>
+  <td></td>
+  <td class=xl67>gU</td>
+  <td class=xl67>Uppercase</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'><span
+  style='mso-spacerun:yes'> </span>C</td>
+  <td class=xl67>delete until end of line and insert</td>
+  <td></td>
+  <td class=xl67>gu</td>
+  <td class=xl67>lowercase</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 style='height:32.0pt'></td>
+  <td class=xl65></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'><span
+  style='mso-spacerun:yes'> </span>r</td>
+  <td class=xl67>replace one character</td>
+  <td></td>
+  <td class=xl67>u</td>
+  <td class=xl67>undo changes</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 class=xl67 style='height:32.0pt'>R</td>
+  <td class=xl67>enter replace mode</td>
+  <td></td>
+  <td class=xl67><span style='mso-spacerun:yes'> </span>Ctrl+R</td>
+  <td class=xl67>redo changes</td>
+ </tr>
+ <tr height=43 style='height:32.0pt'>
+  <td height=43 style='height:32.0pt'></td>
+  <td class=xl65></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=42 style='height:32.0pt;mso-xlrowspan:2'>
+  <td height=42 colspan=5 style='height:32.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=43 style='page-break-before:always;height:32.0pt'>
+  <td height=43 style='height:32.0pt'></td>
+  <td class=xl65></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=209 style='width:157pt'></td>
+  <td width=451 style='width:338pt'></td>
+  <td width=87 style='width:65pt'></td>
+  <td width=219 style='width:164pt'></td>
+  <td width=561 style='width:421pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
